@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style type="text/css">
+	body {background: #1b1b1b; overflow: hidden; }
+	*{margin:0; padding: 0; box-sizing: border-box;}
+nav {width: 80px; height: 80px; border-radius: 50%; background: black; box-shadow: 0 0 20px black; position: relative; display: flex; align-items: center; justify-content: center; cursor: pointer; float: right; right:20px; top: 80vh;}
+span { width: 200px; height: 58px; border-radius: 4px; right: 105px; top: 9px; background: black; box-shadow: 0 0 6px white; position: absolute; cursor: pointer;}
+span::before {content: ''; width:0; height: 0; border-width: 15px; border-style: solid; border-color:black transparent transparent transparent; position: absolute; transform: rotate(-90deg); display: flex; text-shadow: 0 0 6px white; top: 30px; left: 203px; top: 22px; display: flex;}
+.h41 {position: absolute; display: flex; flex-direction: column; color: white; font-family: bold; font-weight: bold; font-size: 15px; left: 9px; top: 7px; line-height: 23px;}
+label {display: flex; align-items: center; justify-content: center;}
+ion-icon {color: white; position: absolute; font-size: 30px; cursor: pointer;}
+.icon1 {font-size: 44px; color: white; z-index: 2;}
+.icon2{font-size: 25px; color: purple; z-index: 5;}
+nav:hover {box-shadow: 0 0 10px white;}
+nav:hover .icon2 {visibility: hidden;}
+nav:hover .icon1 {transform: scale(1.10);}
+.ul1 {list-style-type: none;}
+.li1 {position: relative; display:inline-block; z-index: 10; top: -6px; visibility: hidden;}
+h1 {width:6px; height:6px; background:purple; border-radius: 50%;}
+nav:hover .li1 {visibility: visible;}
+nav:hover .h1.i {animation: kara 1.7s;}
+@keyframes kara {0%{transform: translateY(-6px);}25%{transform: translateY(1px);}}
+nav:hover .h1.ii {animation: karaa 3.4s;}
+@keyframes karaa {0%{transform: translateY(-6px);}25%{transform: translateY(1px);}}
+nav:hover .h1.iii {animation: karaaa 5s;}
+@keyframes karaaa {0%{transform: translateY(-6px);}25%{transform: translateY(1px);}}
+
+.container1 {width: 300px; height: 430px; float: right; background: black; box-shadow: 0 0 45px black; border-radius: 10px; position: relative; right: -53px; top: 110vh; transition: 0.6s; cursor: pointer;}
+.container1.active {top: 25vh;}
+nav.active {visibility: hidden;}
+.container2 {width: 50px; height:50px; box-shadow: 0 0 15px black; background:black; float: right;
+ border-radius: 50%; position: relative; right: -345px; top: 15vh; display: flex; align-items: center; justify-content: center; cursor: pointer; color: white; font-size: 25px; visibility: hidden;}
+ .container2.active {visibility: visible;}
+.container2:hover {box-shadow: 0 0 10px white;}
+ .div3 {width: 300px; height:70px; background:black; border-bottom:2px solid white; cursor: pointer;}
+ .photo1 {width: 45px; height:45px; border-radius: 5px; position: absolute; display: flex; flex-direction: column; top: 12.5px; left: 15px;}
+ h4 {position: absolute; display: flex; flex-direction: column; color: white; font-family: bold; font-weight: bold; font-size: 15px; line-height: 20px; left:75px; top: 16px;}
+ .ul2 {list-style-type: none;}
+ .li2 {position: relative; color: white; cursor: pointer; left:35px; top: 28px; margin-top: 25px;}
+ input {width:230px; height: 40px; background:#0f0f0f; color: white; outline: none; border: 2px solid white; }
+ .ınput {font-family: bold; font-weight: bold; position: absolute; display: flex; flex-direction: column; top: 10px; left: 9px; transition: 0.6s; pointer-events: none;} 
+ input:not(:placeholder-shown) + .ınput ,input:focus + .ınput {top: -10px; background: black;}
+ 
+ .start {width: 100px; height:30px; background: black; color: white; box-shadow: 0 0 10px white;
+ 	cursor: pointer; display: flex; align-items: center; justify-content: center; position: relative; border-radius: 6px; left: 90px; top: 55px;}
+ 	.start:hover {transform: scale(1.03);}
+ 	h6 {font-family: bold; font-weight: bold; font-size: 12px;}
+ 	.photo3 {position: absolute; display: flex; flex-direction: column; width: 45px; height: 45px; border-radius: 6px; left: 240px; top: 12.5px;}
+ 	nav.active .photo3 {width: 10px;}
+</style>
+</head>
+<body>
+<nav>
+	<span><h4 class="h41">WE'RE ONLİNE!<br>How may I help you today?</h4></span>
+
+<label>
+	<ion-icon name="chatbox" class="icon1"></ion-icon><ion-icon name="chatbox" class="icon2"></ion-icon>
+  <ul class="ul1">
+  	<li class="li1"><h1 class="h1 i"></h1></li>
+  	<li class="li1"><h1 class="h1 ii"></h1></li>
+  	<li class="li1"><h1 class="h1 iii"></h1></li>
+  </ul>
+</label>
+</nav>
+
+<div class="container1">
+	<div class="div3">
+		 <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGYTfDVuTekdw/profile-displayphoto-shrink_100_100/0/1646331015779?e=1655942400&v=beta&t=8bqDoc3bzPBPcly_gOBgePB5eS8N1f8jpT1T2X_Uz2k" class="photo1">
+		 <h4>CLARUSWAY<br>ONLİNE</h4>
+		 <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQE3aOp3cdsq6A/company-logo_200_200/0/1641456287876?e=2147483647&v=beta&t=EQB1wMGJ4KchW8RtWR3OC1CbyHWqMuECvvgcw3knimI" class="photo3">
+	</div>
+  <div class="div4">
+  	<ul class="ul2">
+  		<li class="li2"><input type="text" name="" placeholder=" "><div class="ınput">Enter Your Name</div></li>
+  	</ul>
+  	<ul class="ul2">
+  		<li class="li2"><input type="text" name="" placeholder=" "><div class="ınput">Enter Your Email Adress </div></li>
+  	</ul>
+  	<ul class="ul2">
+  		<li class="li2"><input type="text" name="" placeholder=" "><div class="ınput">Enter Your Message</div></li>
+  	</ul>
+  </div>
+<div class="start"><h6>START CHAT</h6></div>
+</div>
+<div class="container2">
+	<i class="fa-solid fa-angle-down"></i>
+</div>
+<script type="text/javascript">
+	const container2 = document.querySelector('.container2');
+	const container = document.querySelector('.container1');
+	const nav = document.querySelector('nav');
+  nav.addEventListener('click',()=>{
+  	container.classList.toggle('active');
+  	nav.classList.toggle('active');
+  	container2.classList.toggle('active');
+  })
+  container2.addEventListener('click',()=>{
+  	container.classList.remove('active');
+  	container2.classList.remove('active');
+  	nav.classList.remove('active');
+  })
+</script>
+</body>
+</html>
